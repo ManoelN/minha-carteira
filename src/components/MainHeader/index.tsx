@@ -7,7 +7,9 @@ import {
      Container,
      Profile,
      Welcome, 
-     UserName
+     UserName,
+     White,
+     Black
  } from './styles';
 
 const MainHeader: React.FC = () => {
@@ -19,8 +21,9 @@ const MainHeader: React.FC = () => {
 
     return (
         <Container>
+            <White>Light</White>
             <Toggle/>
-
+            <Black>Dark</Black>
             <Profile>
                 <Welcome> Olá, {emoji}</Welcome>
                 <UserName>Manoel Neto</UserName>
